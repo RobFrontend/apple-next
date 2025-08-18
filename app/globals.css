@@ -71,7 +71,7 @@ body {
   position: relative;
   min-height: 58rem;
   text-align: center;
-  padding: 5.2rem 0;
+  padding: 5.2rem 1.2rem;
 }
 
 .grid-textbox h3 {
@@ -149,4 +149,16 @@ body {
 
 .grid-cta-box {
   gap: 1.8rem;
+}
+
+@media (max-width: 64em) {
+  .grid-textbox {
+    padding: 2.4rem 1.2rem;
+  }
+}
+
+@media (max-width: 35em) {
+  html {
+    font-size: 50%;
+  }
 }

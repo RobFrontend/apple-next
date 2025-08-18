@@ -1,11 +1,13 @@
 import Image from "next/image";
 import KV1 from "@/public/kv1.jpg";
+import KV1md from "@/public/kv1md.jpg";
+import KV1sm from "@/public/kv1sm.jpg";
 import Link from "next/link";
 
 function HomeKv() {
   return (
     <div className="pt-[44px]">
-      <div className="relative text-center min-h-[700px] py-16">
+      <div className="relative text-center min-h-[700px] max-xl:min-h-[540px] max-sm:min-h-[85vh] py-16">
         <h1 className="heading1-hero">iPhone</h1>
         <h2 className="heading2-hero">Meet the iPhone 16 family.</h2>
         <div className="cta-box">
@@ -27,7 +29,25 @@ function HomeKv() {
           fill
           objectPosition="center"
           objectFit="cover"
-          className="z-[-1]"
+          className="z-[-1] max-xl:hidden"
+        />
+        <Image
+          src={KV1md}
+          alt="kv"
+          quality={100}
+          fill
+          objectPosition="center"
+          objectFit="cover"
+          className="z-[-1] max-sm:hidden min-xl:hidden"
+        />
+        <Image
+          src={KV1sm}
+          alt="kv"
+          quality={100}
+          fill
+          objectPosition="center"
+          objectFit="cover"
+          className="z-[-1] min-sm:hidden"
         />
       </div>
     </div>
