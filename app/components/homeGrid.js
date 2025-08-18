@@ -14,9 +14,13 @@ function HomeGrid() {
         <div className="text-white">
           <h3>iPad Pro</h3>
           <p>Unbelievably thin. Incredibly powerful.</p>
-          <div>
-            <Link href="#">Learn More</Link>
-            <Link href="#">Buy</Link>
+          <div className="cta-box grid-cta-box">
+            <Link href="#" className="cta cta1 grid-cta">
+              Learn More
+            </Link>
+            <Link href="#" className="cta cta2 grid-cta">
+              Buy
+            </Link>
           </div>
         </div>
         <div>
@@ -35,9 +39,13 @@ function HomeGrid() {
         <div className="text-white">
           <h3>MacBook Pro</h3>
           <p>A work of smart.</p>
-          <div>
-            <Link href="#">Learn More</Link>
-            <Link href="#">Buy</Link>
+          <div className="cta-box grid-cta-box">
+            <Link href="#" className="cta cta1 grid-cta">
+              Learn More
+            </Link>
+            <Link href="#" className="cta cta2 grid-cta">
+              Buy
+            </Link>
           </div>
         </div>
         <div>
@@ -56,9 +64,13 @@ function HomeGrid() {
         <div className="text-white">
           <h3>AirPods Pro 2</h3>
           <p>Now with a Hearing Aid feature.</p>
-          <div>
-            <Link href="#">Learn More</Link>
-            <Link href="#">Buy</Link>
+          <div className="cta-box grid-cta-box">
+            <Link href="#" className="cta cta1 grid-cta">
+              Learn More
+            </Link>
+            <Link href="#" className="cta cta2 grid-cta">
+              Buy
+            </Link>
           </div>
         </div>
 
@@ -75,9 +87,13 @@ function HomeGrid() {
         <div>
           <h3>Apple Watch Series 10</h3>
           <p>Thinstant classic.</p>
-          <div>
-            <Link href="#">Learn More</Link>
-            <Link href="#">Buy</Link>
+          <div className="cta-box grid-cta-box">
+            <Link href="#" className="cta cta1 grid-cta">
+              Learn More
+            </Link>
+            <Link href="#" className="cta cta2 grid-cta">
+              Buy
+            </Link>
           </div>
         </div>
 
@@ -97,8 +113,10 @@ function HomeGrid() {
             Get $160-$600 in credit when you <br></br>trade in iPhone 12 or
             higher.
           </p>
-          <div>
-            <Link href="#">Get your estimate</Link>
+          <div className="cta-box grid-cta-box">
+            <Link href="#" className="cta cta1 grid-cta">
+              Get your estimate
+            </Link>
           </div>
         </div>
 
@@ -115,9 +133,13 @@ function HomeGrid() {
         <div>
           <h3>Apple Card</h3>
           <p>Get up to 3% Daily Cash back with every purchase.</p>
-          <div>
-            <Link href="#">Learn More</Link>
-            <Link href="#">Apply Now</Link>
+          <div className="cta-box grid-cta-box">
+            <Link href="#" className="cta cta1 grid-cta">
+              Learn More
+            </Link>
+            <Link href="#" className="cta cta2 grid-cta">
+              Apply Now
+            </Link>
           </div>
         </div>
 
