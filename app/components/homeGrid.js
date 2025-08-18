@@ -15,7 +15,7 @@ import Link from "next/link";
 
 function HomeGrid() {
   return (
-    <div className="px-6 grid grid-cols-2 gap-6 max-md:grid-cols-1">
+    <div className="px-6 grid grid-cols-2 gap-6 max-md:grid-cols-1 max-md:px-0">
       <div className="grid-textbox justify-between">
         <div className="text-white">
           <h3>iPad Pro</h3>
