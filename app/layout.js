@@ -1,14 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Almarai } from "next/font/google";
 import "./globals.css";
+import Navigation from "./components/navigation";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const almarai = Almarai({
+  variable: "--font-almarai",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "700", "800"],
 });
 
 export const metadata = {
@@ -19,9 +16,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${almarai.variable} antialiased`}>
+        <Navigation />
         {children}
       </body>
     </html>

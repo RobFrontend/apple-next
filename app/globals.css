@@ -1,26 +1,141 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* *,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-size: 62.5%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Almarai", sans-serif;
+  font-weight: 300;
+}
+
+.heading1-hero {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.07;
+}
+.heading2-hero {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.14;
+}
+.heading3-hero {
+  font-size: 2.1rem;
+  font-weight: 700;
+  background: linear-gradient(94deg, #0090f7, #ba62fc, #f2416b, #f55600);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.navigation {
+  backdrop-filter: saturate(100%) blur(20px);
+  position: fixed;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 1.2rem;
+  z-index: 10;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation svg {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.navigation a {
+  transition: all 0.3s;
+}
+
+.navigation a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.grid-textbox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 58rem;
+  text-align: center;
+  padding: 5.2rem 0;
+}
+
+.grid-textbox h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.grid-textbox p {
+  font-size: 2.1rem;
+}
+
+.grid-textbox .heading3-hero {
+  font-size: 1.4rem;
+}
+
+.video-box {
+  text-align: center;
+}
+
+.video-box p {
+  font-size: 2.1rem;
+}
+
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(0.2);
+  opacity: 0.65;
+}
+
+.cta-box {
+  padding-top: 1.6rem;
+  padding-bottom: 2.4rem;
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+}
+
+.cta {
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  border: solid 0.1rem #006edb;
+  padding: 0.7rem 2.1rem;
+  border-radius: 999px;
+  transition: all 0.15s;
+}
+
+.cta1 {
+  background-color: #006edb;
+  color: #fff;
+}
+
+.cta2 {
+  color: #006edb;
+}
+
+.cta:hover {
+  color: #fff;
+  background-color: #0077ed;
+  border: solid 0.1rem #0077ed;
 }
