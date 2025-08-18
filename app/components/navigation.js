@@ -13,7 +13,7 @@ function Navigation() {
             <FaApple />
           </Link>
         </li>
-        <li className="max-md:hidden">
+        <li className="max-lg:hidden">
           <NavMenu />
         </li>
         <li>
