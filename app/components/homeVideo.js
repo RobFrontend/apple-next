@@ -3,7 +3,7 @@ import { FaApple } from "react-icons/fa";
 
 function HomeVideo() {
   return (
-    <div className="relative h-[700px] video-box p-16">
+    <div className="relative h-[700px] video-box p-16 max-xl:min-h-[540px] max-sm:min-h-[85vh]">
       <div className="flex flex-col justify-between h-full">
         <div>
           <h2 className="heading1-hero ">Crystal clarity</h2>
