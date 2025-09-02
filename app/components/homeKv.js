@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function HomeKv() {
   return (
-    <div className="pt-[44px]">
+    <div>
       <div className="relative text-center min-h-[700px] max-xl:min-h-[540px] max-sm:min-h-[85vh] py-16">
         <h1 className="heading1-hero">iPhone</h1>
         <h2 className="heading2-hero">Meet the iPhone 16 family.</h2>

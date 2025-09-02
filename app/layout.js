@@ -1,6 +1,8 @@
 import { Almarai } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation";
+import { MenuProvider } from "./context/MenuContext";
+import Main from "./components/main";
 
 const almarai = Almarai({
   variable: "--font-almarai",
@@ -17,8 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${almarai.variable} antialiased`}>
-        <Navigation />
-        {children}
+        <MenuProvider>
+          <Navigation />
+          <Main>{children}</Main>
+        </MenuProvider>
       </body>
     </html>
   );
