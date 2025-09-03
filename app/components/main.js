@@ -11,6 +11,13 @@ function Main({ children }) {
           : "main-padding transition-all duration-500"
       }
     >
+      <div
+        className={
+          isOpenMenu
+            ? "absolute top-0 left-0 h-screen w-full bg-white/40 z-[2] transition-all duration-1000"
+            : "hidden transition-all duration-1000"
+        }
+      ></div>
       {children}
     </main>
   );
