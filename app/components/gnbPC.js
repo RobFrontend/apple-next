@@ -4,9 +4,11 @@ import Link from "next/link";
 import { useMenu } from "../context/MenuContext";
 import gnb from "../gnb/gnb";
 
-function GnbPC() {
+function GnbPC({ id, isActiveMenu }) {
   const { isOpenMenu, setIsOpenMenu } = useMenu();
-  const gnbArr = gnb[0].content;
+  let idd = id !== null ? id : 0;
+  const gnbArr = gnb[idd].content;
+  // const gnbArr = gnb.find((g) => g.id === id)?.content || [];
   console.log(gnbArr);
   return (
     <div
@@ -21,18 +23,20 @@ function GnbPC() {
         onMouseEnter={() => setIsOpenMenu(true)}
         onMouseLeave={() => setIsOpenMenu(false)}
       >
-        <div className="gnb-box">
-          {gnbArr.map((g) => (
-            <div key={g.l2} className="flex flex-col pt-[4.2rem] pb-[9.6rem]">
-              <p className="gnb-l2">{g.l2}</p>
-              {g.l3.map((l3) => (
-                <Link href={l3.link} key={l3.title} className="gnb-l3">
-                  {l3.title}
-                </Link>
-              ))}
-            </div>
-          ))}
-        </div>
+        {isActiveMenu === id && (
+          <div className="gnb-box">
+            {gnbArr.map((g) => (
+              <div key={g.l2} className="flex flex-col pt-[4.2rem] pb-[9.6rem]">
+                <p className="gnb-l2">{g.l2}</p>
+                {g.l3.map((l3) => (
+                  <Link href={l3.link} key={l3.title} className="gnb-l3">
+                    {l3.title}
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
       <div className=" min-h-[80vh]"></div>
     </div>
