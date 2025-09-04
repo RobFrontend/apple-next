@@ -14,7 +14,7 @@ function Main({ children }) {
       <div
         className={
           isOpenMenu
-            ? "absolute top-0 left-0 h-full w-full bg-white/40 z-[2] transition-all duration-1000"
+            ? "absolute top-0 left-0 h-full w-full bg-white/25 z-[2] transition-all duration-1000"
             : "hidden transition-all duration-1000"
         }
       ></div>

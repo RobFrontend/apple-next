@@ -220,3 +220,10 @@ body {
     font-size: 50%;
   }
 }
+
+.appleLogoVideo {
+  position: absolute;
+  bottom: 4.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
