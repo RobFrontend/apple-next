@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import gnb from "../gnb/gnb";
 import { RiCloseLargeFill } from "react-icons/ri";
 import Link from "next/link";
@@ -19,10 +19,14 @@ function MobileNavMenu({ isOpen, setIsOpen }) {
   }
 
   function closeAllGnb() {
-    setIsActiveId(null);
-    setIsOpenGnb(false);
     setIsOpen(false);
+    setIsOpenGnb(false);
+    setIsActiveId(null);
   }
+
+  useEffect(() => {
+    !isOpen && hideGnbSide();
+  }, [isOpen, isOpenGnb, isActiveId]);
 
   return (
     <div
@@ -62,7 +66,7 @@ function MobileNavMenu({ isOpen, setIsOpen }) {
                           href={l3.link}
                           key={l3.title}
                           className="gnbmo-l3"
-                          onClick={() => setIsOpen(!isOpen)}
+                          onClick={() => setIsOpen(false)}
                         >
                           {l3.title}
                         </Link>
