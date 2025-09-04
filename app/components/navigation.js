@@ -7,10 +7,12 @@ import NavMenu from "./navMenu";
 import { useMenu } from "../context/MenuContext";
 
 function Navigation() {
-  const { isOpenMenu } = useMenu();
+  const { isOpenMenu, setIsOpenMenu } = useMenu();
+
   return (
     <nav
       className={isOpenMenu ? "navigation bg-white" : "navigation bg-white/80"}
+      onMouseLeave={() => setIsOpenMenu(false)}
     >
       <ul className="flex gap-14 items-center justify-center">
         <li>

@@ -9,11 +9,6 @@ function NavMenu() {
   const { isOpenMenu, setIsOpenMenu } = useMenu();
   const [isActiveMenu, setIsActiveMenu] = useState(null);
 
-  function hidexd() {
-    setIsActiveMenu(null);
-    setIsOpenMenu(false);
-  }
-
   return (
     <div className="navigation-boxes">
       {gnbArr.map((g) => (
@@ -32,7 +27,7 @@ function NavMenu() {
               <div
                 className="bg-white"
                 onMouseEnter={() => setIsOpenMenu(true)}
-                onMouseLeave={() => setIsOpenMenu(false)}
+                // onMouseLeave={() => setIsOpenMenu(false)}
               >
                 <div className="gnb-box">
                   {g.content.map((g) => (
