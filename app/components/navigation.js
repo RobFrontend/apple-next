@@ -24,12 +24,12 @@ function Navigation() {
           <NavMenu />
         </li>
         <li>
-          <Link href="#">
+          <Link href="#" onMouseEnter={() => setIsOpenMenu(false)}>
             <IoIosSearch />
           </Link>
         </li>
         <li>
-          <Link href="#">
+          <Link href="#" onMouseEnter={() => setIsOpenMenu(false)}>
             <IoBagOutline />
           </Link>
         </li>
