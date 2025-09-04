@@ -5,7 +5,7 @@ function HomeVideo() {
   return (
     <div className="relative video-box p-16 min-h-[700px] max-xl:min-h-[540px] max-sm:min-h-[85vh]">
       <div>
-        <h2 className="heading1-hero ">Crystal clarity</h2>
+        <h2 className="heading1-hero ">Crystal Clarity</h2>
         <h3 className="heading2-hero pb-8">
           A display that reveals every detail
         </h3>
