@@ -220,6 +220,11 @@ body {
     font-size: 50%;
   }
 }
+@media (max-width: 32em) {
+  .grid-textbox {
+    padding: 4.2rem 1.2rem;
+  }
+}
 
 .appleLogoVideo {
   position: absolute;
