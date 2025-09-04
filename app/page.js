@@ -5,6 +5,7 @@ import HomeKv from "./components/homeKv";
 import HomeKv2 from "./components/homeKv2";
 import HomeGrid from "./components/homeGrid";
 import HomeVideo from "./components/homeVideo";
+import SeriesCarousel from "./components/seriesCarousel";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
       </section>
       <section className="p-3"></section>
       <HomeGrid />
+      <section className="p-3"></section>
+      <SeriesCarousel />
       <section className="p-3"></section>
     </>
   );

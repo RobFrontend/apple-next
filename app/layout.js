@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${almarai.variable} antialiased`}>
+      <body className={`${almarai.variable} antialiased overflow-x-hidden`}>
         <MenuProvider>
           <Navigation />
           <Main>{children}</Main>
