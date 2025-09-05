@@ -55,7 +55,7 @@ function SeriesCarousel() {
             width={350}
             height={1000}
             alt={watchArr[prevKv].title}
-            className="min-md:hidden max-[475px]:w-[300px]"
+            className="min-md:hidden max-md:w-[auto] max-md:h-[85vh] max-[475px]:max-h-[85vh]"
           />
         </div>
         <div
@@ -81,7 +81,7 @@ function SeriesCarousel() {
             width={350}
             height={1000}
             alt={watchArr[isCurrentKv].title}
-            className="min-md:hidden max-[475px]:w-[300px]"
+            className="min-md:hidden max-md:w-[auto] max-md:h-[85vh] max-[475px]:max-h-[85vh]"
           />
         </div>
         <div
@@ -107,7 +107,7 @@ function SeriesCarousel() {
             width={350}
             height={1000}
             alt={watchArr[nextKv].title}
-            className="min-md:hidden max-[475px]:w-[300px]"
+            className="min-md:hidden max-md:w-[auto] max-md:h-[85vh] max-[475px]:max-h-[85vh]"
           />
         </div>
       </div>
