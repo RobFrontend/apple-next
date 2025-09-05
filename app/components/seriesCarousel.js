@@ -26,7 +26,7 @@ function SeriesCarousel() {
   const nextKv = (isCurrentKv + 1) % watchArr.length;
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto overflow-x-hidden">
       <div
         className={
           "flex w-[300%] translate-x-[-33%] content-center justify-center transition-all duration-500"
