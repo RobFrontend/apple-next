@@ -336,6 +336,44 @@ body {
 
 /*  */
 
+/* Footer */
+
+.footer-section {
+  background-color: rgb(245, 245, 247);
+  letter-spacing: -0.01em;
+  line-height: 1.3333733333;
+  font-size: 1.4rem;
+}
+
+.footer-box {
+  max-width: 98rem;
+  padding: 2.4rem;
+}
+
+.footer-copy {
+  color: rgba(0, 0, 0, 0.56);
+
+  font-weight: 400;
+}
+
+.footer-section a {
+  color: rgba(0, 0, 0, 0.72);
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-title {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 700;
+}
+
+.footer-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+/*  */
+
 @media (max-width: 64em) {
   .grid-textbox {
     padding: 2.4rem 1.2rem;

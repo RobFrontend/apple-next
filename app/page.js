@@ -7,6 +7,7 @@ import HomeGrid from "./components/homeGrid";
 import HomeVideo from "./components/homeVideo";
 import SeriesCarousel from "./components/seriesCarousel";
 import Cards from "./components/cards";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -32,7 +33,9 @@ export default function Home() {
       <section className="p-3"></section>
       <section className="p-3"></section>
       <section className="p-3"></section>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
