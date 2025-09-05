@@ -41,6 +41,21 @@ function SeriesCarousel() {
             width={1200}
             height={800}
             alt={watchArr[prevKv].title}
+            className="max-xl:hidden"
+          />
+          <Image
+            src={watchArr[prevKv].assetXL}
+            width={800}
+            height={560}
+            alt={watchArr[prevKv].title}
+            className="max-md:hidden min-xl:hidden"
+          />
+          <Image
+            src={watchArr[prevKv].assetSM}
+            width={350}
+            height={1000}
+            alt={watchArr[prevKv].title}
+            className="min-md:hidden min-[475px]:w-[75%]"
           />
         </div>
         <div
@@ -52,6 +67,21 @@ function SeriesCarousel() {
             width={1200}
             height={800}
             alt={watchArr[isCurrentKv].title}
+            className="max-xl:hidden"
+          />
+          <Image
+            src={watchArr[isCurrentKv].assetXL}
+            width={800}
+            height={560}
+            alt={watchArr[isCurrentKv].title}
+            className="max-md:hidden min-xl:hidden"
+          />
+          <Image
+            src={watchArr[isCurrentKv].assetSM}
+            width={350}
+            height={1000}
+            alt={watchArr[isCurrentKv].title}
+            className="min-md:hidden min-[475px]:w-[75%]"
           />
         </div>
         <div
@@ -63,6 +93,21 @@ function SeriesCarousel() {
             width={1200}
             height={800}
             alt={watchArr[nextKv].title}
+            className="max-xl:hidden"
+          />
+          <Image
+            src={watchArr[nextKv].assetXL}
+            width={800}
+            height={560}
+            alt={watchArr[nextKv].title}
+            className="max-md:hidden min-xl:hidden"
+          />
+          <Image
+            src={watchArr[nextKv].assetSM}
+            width={350}
+            height={1000}
+            alt={watchArr[nextKv].title}
+            className="min-md:hidden min-[475px]:w-[75%]"
           />
         </div>
       </div>
