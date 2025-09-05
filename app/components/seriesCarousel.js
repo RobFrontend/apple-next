@@ -48,14 +48,14 @@ function SeriesCarousel() {
             width={800}
             height={560}
             alt={watchArr[prevKv].title}
-            className="max-md:hidden min-xl:hidden"
+            className="max-md:hidden min-xl:hidden max-[1024px]:w-[650px]"
           />
           <Image
             src={watchArr[prevKv].assetSM}
             width={350}
             height={1000}
             alt={watchArr[prevKv].title}
-            className="min-md:hidden"
+            className="min-md:hidden max-[475px]:w-[300px]"
           />
         </div>
         <div
@@ -74,14 +74,14 @@ function SeriesCarousel() {
             width={800}
             height={560}
             alt={watchArr[isCurrentKv].title}
-            className="max-md:hidden min-xl:hidden"
+            className="max-md:hidden min-xl:hidden max-[1024px]:w-[650px]"
           />
           <Image
             src={watchArr[isCurrentKv].assetSM}
             width={350}
             height={1000}
             alt={watchArr[isCurrentKv].title}
-            className="min-md:hidden"
+            className="min-md:hidden max-[475px]:w-[300px]"
           />
         </div>
         <div
@@ -100,14 +100,14 @@ function SeriesCarousel() {
             width={800}
             height={560}
             alt={watchArr[nextKv].title}
-            className="max-md:hidden min-xl:hidden"
+            className="max-md:hidden min-xl:hidden max-[1024px]:w-[650px]"
           />
           <Image
             src={watchArr[nextKv].assetSM}
             width={350}
             height={1000}
             alt={watchArr[nextKv].title}
-            className="min-md:hidden"
+            className="min-md:hidden max-[475px]:w-[300px]"
           />
         </div>
       </div>
