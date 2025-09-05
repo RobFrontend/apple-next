@@ -55,7 +55,7 @@ function SeriesCarousel() {
             width={350}
             height={1000}
             alt={watchArr[prevKv].title}
-            className="min-md:hidden min-[475px]:w-[75%]"
+            className="min-md:hidden"
           />
         </div>
         <div
@@ -81,7 +81,7 @@ function SeriesCarousel() {
             width={350}
             height={1000}
             alt={watchArr[isCurrentKv].title}
-            className="min-md:hidden min-[475px]:w-[75%]"
+            className="min-md:hidden"
           />
         </div>
         <div
@@ -107,7 +107,7 @@ function SeriesCarousel() {
             width={350}
             height={1000}
             alt={watchArr[nextKv].title}
-            className="min-md:hidden min-[475px]:w-[75%]"
+            className="min-md:hidden"
           />
         </div>
       </div>
