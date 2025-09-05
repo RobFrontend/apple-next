@@ -37,7 +37,12 @@ function NavMenu() {
                     >
                       <p className="gnb-l2">{g.l2}</p>
                       {g.l3.map((l3) => (
-                        <Link href={l3.link} key={l3.title} className="gnb-l3">
+                        <Link
+                          href={l3.link}
+                          key={l3.title}
+                          className="gnb-l3"
+                          onClick={() => setIsOpenMenu(false)}
+                        >
                           {l3.title}
                         </Link>
                       ))}
