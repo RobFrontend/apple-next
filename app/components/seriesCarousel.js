@@ -29,7 +29,7 @@ function SeriesCarousel() {
     <div className="mx-auto overflow-x-hidden">
       <div
         className={
-          "flex w-[300%] translate-x-[-33%] content-center justify-center transition-all duration-500"
+          "flex w-[300%] translate-x-[-33.33%] content-center justify-center transition-all duration-500"
         }
       >
         <div
